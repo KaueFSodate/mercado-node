@@ -1,0 +1,63 @@
+<header>
+    <nav class="container-nav">
+        <a href="/mercado"><li>Home</li></a>
+        <a href="/cadastrar"><li>Cadastrar</li></a>
+        <a href="/login"><li>Sair</li></a>
+    </nav>
+
+</header>
+
+<h1>Cadastrar produto</h1>
+
+<div class="container-cadastrarProduto">
+        
+
+        <form action="/mercado/cadastrarProduto" method="post">
+
+            <label >Nome:</label>
+            <input type="text" name="nome">
+            <label >quantidade:</label>
+            <input type="number" name="quantidade">
+            <label >Valor:</label>
+            <input type="number" name="valor">
+            <button type="submit" style="background-color: #38E4AE;">Cadastrar</button>
+
+        </form>
+</div>
+
+<h1>Carrinho</h1>
+
+<div class="carrinho-container">
+
+    {{#each produtos}}
+
+        <div class="nome-container">
+            <p>Nome:</p>
+            <input type="text" value="{{this.nome}}">
+        </div>
+
+        <div class="valor-container">
+            <p>Valor:</p>
+            <input type="number" value="{{this.valor}}">
+
+        </div>
+
+        <div class="quantidade-container">
+            <p>Quantidade:</p>
+            <input type="number" value="{{this.quantidade}}">
+
+        </div>
+
+        <div class="total-container">
+            <p>Total:</p>
+            <input type="number" value="{{this.total}}">
+
+        </div>
+
+            <a href="/editar/{{this.idprodutos}}"><button style="background-color: #1BE7FF;">Editar</button></a>
+            <a href="/mercado/deletar/{{this.idprodutos}}"><button style="background-color: #BF0603;">Deletar</button></a>
+
+    {{/each}}
+
+
+</div>

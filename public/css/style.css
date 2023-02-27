@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+   background-color: #FCFFFD;
+}
+
+input{
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    background-color: #D9F7FA;
+}
+
+label{
+    font-weight: bold;
+    color: black;
+}
+
+h1{
+    margin-top: 30px;
+    color: black;
+}
+
+button{
+    margin: 15px;
+    background-color: #FBFEF9;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    color: black;
+}
+
+button:hover{
+    height: 45px;
+    width: 100px;
+    transition: 0.3s;
+}
+
+.container-nav{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100px;
+}
+
+.container-nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.container-nav li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    border-radius: 10px;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+    height: 35px;
+    width: 90px;
+    background-color: #66C7F4;
+}
+
+.container-nav li:hover{
+    height: 45px;
+    width: 100px;
+    transition: 0.3s;
+}
+
+.container-cadastrarProduto{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+
+
+.carrinho-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    flex-wrap: wrap;
+}
+
+.carrinho-container p{
+    display: flex;
+    margin-right: 10px;
+    background-color: #66C7F4;
+    height: 40px;
+    width: 120px;
+    color: #F9F9F9;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.nome-container{
+    width: 228px;
+    margin-right: 10px;
+    display: flex;
+    margin: 15px;
+    align-items: center;
+}
+
+.valor-container{
+    width: 200px;
+    margin-right: 10px;
+    display: flex;
+    margin: 15px;
+    align-items: center;
+}
+
+.quantidade-container{
+    width: 220px;
+    margin-right: 10px;
+    display: flex;
+    margin: 15px;
+    align-items: center;
+}
+
+.total-container{
+    width: 200px;
+    margin-right: 10px;
+    display: flex;
+    margin: 15px;
+    align-items: center;
+}
+
+.container-cadastroU-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container-cadastroU-login label{
+    margin: 30px;
+}

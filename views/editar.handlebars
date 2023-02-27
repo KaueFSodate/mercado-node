@@ -1,0 +1,14 @@
+<h1>Editar</h1>
+
+<form action="/editar" method="post">
+
+        <input type="hidden" name="idprodutos" value="{{produtos.idprodutos}}">
+        <label >Nome:</label>
+        <input type="text" name="nome" value="{{produtos.nome}}">
+        <label >quantidade:</label>
+        <input type="number" name="quantidade" value="{{produtos.quantidade}}">
+        <label >Valor:</label>
+        <input type="number" name="valor" value="{{produtos.valor}}">
+        <button type="submit" style="background-color: #66C7F4;">Editar</button>
+
+</form>
